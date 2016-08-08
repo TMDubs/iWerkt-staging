@@ -1,0 +1,99 @@
+<!---IWERKT 2.0 Master-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>iWERKT</title>
+
+      <link rel='stylesheet' type='text/css' href='styles.css'>
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
+      <link rel="stylesheet" href='font-awesome-4.6.3/css/font-awesome.min.css'>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+
+  </head>
+  <body>
+
+    <!--HOME SECTION-->
+  <div id='homeContainer'>
+    <div class='header'>
+      <div id='logoContainer'>
+        <div id='logo'><img src='img/artLogo.jpg'></div>
+      </div>
+      <div id='menuContainer'>
+        <ul id='menuList'>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+      <div id='CTA-buttonContainerT'>
+        <div id='CTA-buttonT'>
+          <p>iOS | ANDROID</p>
+        </div>
+      </div>
+    </div>
+    <div class='headerOnScroll'>
+      <div id='logoContainer'>
+        <div id='logo'><img src='img/artLogo.jpg'></div>
+      </div>
+      <div id='menuContainer'>
+        <ul id='menuList'>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+      <div id='CTA-buttonContainerT'>
+        <div id='CTA-buttonTOnScroll'>
+          <p>iOS | ANDROID</p>
+        </div>
+      </div>
+    </div>
+    <div id='greenScreen'>
+      <div class='slideshow'></div>
+      <div id='mainTitlesContainer'>
+        <div id='mainTitles'>
+          <h1>IWERKT</h1>
+          <h2>DIGITAL VOUCHERS 4 MODELS</h2>
+        </div>
+        <div id='CTA-buttonContainerB'>
+          <a href='#' id='CTA-buttonB'>LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--NO PAPER SECTION-->
+    <div id='noPaperSection'>
+    </div>
+
+
+
+     <script type="text/javascript">
+      (function($) {          
+        $(document).ready(function(){                    
+          $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 10) {
+              $('.headerOnScroll').fadeIn(250);
+            } else {
+              $('.headerOnScroll').fadeOut(250);
+            }
+          });
+        });
+      })(jQuery);
+      </script>
+
+      <script type='text/javascript'>
+      $('.slideshow').backstretch(
+        ['img/slideshow/01.jpg','img/slideshow/02.jpg','img/slideshow/03.jpg','img/slideshow/04.jpg','img/slideshow/05.jpg','img/slideshow/06.jpg','img/slideshow/07.jpg'], {duration: 3000, fade: 2000}
+      );
+    </script>
+
+    <script type='text/javascript'>
+    $('#CTA-buttonB').click(function(){
+    $("html, body").animate({ scrollTop: 570 }, 600);
+    return false;
+ });
+</script>
+  </body>
+</html>

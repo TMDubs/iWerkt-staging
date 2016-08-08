@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #fff;
+  height: 2000px;
+  text-rendering: optimizeLegibility;
+}
+
+.header {
+  height: 16%;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+}
+
+.headerOnScroll {
+  display: none;
+  height: 16%;
+  width: 100%;
+  background-color: rgba(251,251,251,0.94);
+  position: fixed;
+  color: #4CC0BD;
+  z-index: 2;
+}
+
+#logoContainer {
+  float: left;
+  width: 26%;
+  height: 100%;
+}
+
+#logo img {
+  width: 20%;
+  margin: 7% 20%;
+}
+
+#menuContainer {
+  width: 48%;
+  height: 100%;
+  float: left;
+}
+
+#menuList {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+}
+
+#menuList li {
+  margin: 8% 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#CTA-buttonContainerT {
+  width: 26%;
+  height: 100%;
+  float: right;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+#CTA-buttonT {
+  float: right;
+  margin: 9% 22% 0 0;
+  padding: 5% 7%;
+  width: 41%;
+  background-color: #fff;
+  color: #4CC0BD;
+  border: solid 2px #fff;
+  font-weight: bolder;
+}
+
+#CTA-buttonTOnScroll {
+  float: right;
+  margin: 9% 22% 0 0;
+  padding: 5% 7%;
+  width: 41%;
+  border: solid 2px #4CC0BD;
+  font-weight: bolder;
+}
+
+#greenScreen {
+  height: 100vh;
+  background-color: rgba(0, 224, 213, 0.4); 
+}
+
+.slideshow {
+  height: 100vh;
+  z-index: -9999;
+  position: relative;
+}
+
+#mainTitlesContainer {
+  position: relative;
+  z-index: 1;
+  margin: -38% auto;
+  width: 100%;
+}
+
+#mainTitles {
+  width: 100%;
+  text-align: center;
+}
+
+#mainTitles h1 {
+  font-family: 'Frutiger LT Std' !important;
+  font-weight: lighter;
+  font-size: 175px;
+  color: #fff;
+  letter-spacing: 50px;
+  margin-bottom: -3%;
+  margin-left: 4%;
+}
+
+#mainTitles h2 {
+  font-size: 27px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 19px;
+}
+
+#CTA-buttonContainerB {
+  width: 100%;
+  margin: 15% auto;
+  height: 100%;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+#CTA-buttonB {
+  margin: 15% auto;
+  width: 10%;
+  padding: 1.5% 2%;
+  color: #fff;
+  border: solid 2px #fff;
+  font-weight: bolder;
+}
+
+#CTA-buttonB a {
+  color: #fff !important;
+}
+
+#CTA-buttonB:hover {
+  background-color: rgba(255,255,255,0.8);
+  color: #4CC0BD !important;
+   -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+}
+
+#noPaperSection {
+  height: 1000px;
+  width: 100%;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
