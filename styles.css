@@ -10,7 +10,6 @@ a {
 
 body {
   background-color: #fff;
-  height: 2000px;
   text-rendering: optimizeLegibility;
 }
 
@@ -37,7 +36,7 @@ body {
   height: 100%;
 }
 
-#logo img {
+.logo img {
   width: 20%;
   margin: 7% 20%;
 }
@@ -162,11 +161,181 @@ body {
   transition:.25s;
 }
 
-#noPaperSection {
-  height: 1000px;
+/*------NO PAPER--------*/
+#noPaperContainer {
+  padding: 15% 0;
   width: 100%;
-  background-color: red;
+  background-color: #fff;
 }
+
+.contentContainer {
+  height: 100%;
+  width: 33%;
+  margin: 0 0 0 10%;
+}
+
+.contentContainer h1 {
+  font-size: 70px;
+  font-weight: lighter;
+  text-align: left;
+  color: #363636;
+  margin-bottom: 8%;
+  line-height: 1.2;
+}
+
+.contentContainer p {
+  font-size: 18px;
+  letter-spacing: .5px;
+  color: #363636;
+  line-height: 1.5;
+  margin-bottom: 8%;
+}
+
+.contentContainer h2 {
+  font-size: 25px;
+  color: #363636;
+  margin-bottom: 4%;
+}
+
+/*.screenShotsContainer {
+  position: absolute;
+  background: gray;
+  border-radius: 50px;
+  height: 100%;
+  float: right;
+  z-index: -9999;
+}
+
+.screenShots  {
+  list-style: none;
+}
+
+.screenShots li {
+  display: inline-block;
+
+  width: 80%;
+  float: left;
+  margin-left: -10%;
+}*/
+
+/*-------KEEP TRACK SECTION-------*/
+
+#keepTrackContainer {
+  padding: 15% 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+
+
+
+/*--------GET PAID SECTION--------*/
+
+#getPaidContainer {
+  padding: 15% 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/*--------GET THE APP SECTION-------*/
+
+#getAppContainer {
+  padding: 15% 0 0 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+#centeredContentContainer {
+  width: 100%;
+  text-align: center;
+}
+
+#centeredContentContainer h1 {
+  font-size: 70px;
+  font-weight: lighter;
+  color: #363636;
+  margin-bottom: 2%;
+  line-height: 1.2;
+}
+
+#centeredContentContainer p {
+  font-size: 35px;
+  letter-spacing: .5px;
+  color: #363636;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+#getAppIconsContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#appStore img {
+  width: 17%;
+  margin-bottom: 1.4%;
+  padding-right: 2%;
+  margin-left: 1%;
+}
+
+#googlePlay img {
+  width: 19.5%;
+}
+
+.footer {
+  margin-top: 10%;
+  border-top: solid 2px #4CC0BD;
+  height: 50vh;
+  background-color: #fff;
+  width: 100%;
+  -webkit-clip-path: polygon(0 64%, 100% 6%, 100% 100%, 0 100%);
+  clip-path: polygon(0 64%, 100% 6%, 100% 100%, 0 100%);
+}
+
+#footerLogoContainer {
+  float: left;
+  width: 15%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+#footerLogo img {
+  width: 36%;
+  margin-top: 125%;
+}
+
+.footerLink {
+  margin-top: 21%;
+  float: right;
+  padding-left: 2%;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  color: #4cc0bd;
+}
+
+#rightMargin {
+  margin-right: 5%;
+}
+
+.icon {
+  font-size: 25px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
