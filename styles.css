@@ -30,6 +30,15 @@ body {
   z-index: 2;
 }
 
+.headerHidden {
+  display: none;
+  position: fixed;
+  background-color: black;
+  height: 16%;
+  width: 100%;
+  z-index: 1;
+}
+
 #logoContainer {
   float: left;
   width: 26%;
@@ -197,26 +206,17 @@ body {
   margin-bottom: 4%;
 }
 
-/*.screenShotsContainer {
-  position: absolute;
-  background: gray;
-  border-radius: 50px;
-  height: 100%;
+.circleRight {
   float: right;
-  z-index: -9999;
+  margin-top: -65%;
+  margin-right: 2%;
+  background: #f5f5f5;
+  border-radius: 50%;
+  width: 850px;
+  height: 850px;
+  z-index: -1;
+  margin-bottom: 15%;
 }
-
-.screenShots  {
-  list-style: none;
-}
-
-.screenShots li {
-  display: inline-block;
-
-  width: 80%;
-  float: left;
-  margin-left: -10%;
-}*/
 
 /*-------KEEP TRACK SECTION-------*/
 
@@ -224,15 +224,18 @@ body {
   float: left;
   padding: 15% 0;
   width: 100%;
-  height: 100%;
   background-color: #f5f5f5;
+}
+
+#keepTrackContent {
+  position: absolute;
 }
 
 .rightContent {
   float: right;
   height: 100%;
   width: 33%;
-  margin: 0 12% 0 0;
+  margin: 0 5% 0 0;
 }
 
 .rightContent h1 {
@@ -258,8 +261,26 @@ body {
   margin-bottom: 4%;
 }
 
+.keepTrackImg {
+  height: 100%;
+  margin-left: 3%;
+}
 
+.keepTrackImg img {
+  width: 18%;
+  float: left;
+  padding-left: 2%;
+}
 
+.circleLeft {
+  float: left;
+  margin: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 850px;
+  height: 850px;
+  z-index: -1;
+}
 
 /*--------GET PAID SECTION--------*/
 
@@ -267,15 +288,47 @@ body {
   float: left;
   padding: 15% 0;
   width: 100%;
-  height: 100%;
   background-color: #fff;
 }
+
+.circleRight {
+  float: right;
+  margin-top: -65%;
+  margin-right: 2%;
+  background: #f5f5f5;
+  border-radius: 50%;
+  width: 850px;
+  height: 850px;
+  z-index: -1;
+  margin-bottom: 15%;
+}
+
+#getPaidCircle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#getPaidImg {
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#getPaidImg img {
+  width: 58%;
+}
+
+#getPaidContent {
+ position: absolute;
+ margin-top: 13%;
+}
+
 
 /*--------GET THE APP SECTION-------*/
 
 #getAppContainer {
   float: left;
-  padding: 15% 0 0 0;
+  padding: 10% 0 0 0;
   width: 100%;
   height: 100%;
   background-color: #f5f5f5;
@@ -310,7 +363,7 @@ body {
 
 #appStore img {
   width: 17%;
-  margin-bottom: 1.4%;
+  margin-bottom: 1.3%;
   padding-right: 2%;
   margin-left: 1%;
 }
@@ -319,9 +372,11 @@ body {
   width: 19.5%;
 }
 
+/*------FOOTER------*/
+
 .footer {
   float: left;
-  margin-top: 10%;
+  margin-top: 2%;
   border-top: solid 2px #4CC0BD;
   height: 50vh;
   background-color: #fff;
