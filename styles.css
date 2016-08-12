@@ -172,7 +172,7 @@ body {
 
 /*------NO PAPER--------*/
 #noPaperContainer {
-  padding: 15% 0;
+  padding: 17% 0 8% 0;
   width: 100%;
   background-color: #fff;
 }
@@ -215,27 +215,42 @@ body {
   width: 850px;
   height: 850px;
   z-index: -1;
-  margin-bottom: 15%;
 }
+
+.noPaperImg {
+  margin-top: 8%;
+  margin-left: 21%;
+}
+
+.noPaperImg img {
+  float: left;
+}
+
+#img01 img {
+  width: 42%;
+}
+
+#img02 img {
+  position: absolute;
+  width: 32%;
+  margin-left: -9%;
+  margin-top: 4%;
+} 
 
 /*-------KEEP TRACK SECTION-------*/
 
 #keepTrackContainer {
   float: left;
-  padding: 15% 0;
+  padding: 8% 0 8% 0;
   width: 100%;
   background-color: #f5f5f5;
-}
-
-#keepTrackContent {
-  position: absolute;
 }
 
 .rightContent {
   float: right;
   height: 100%;
-  width: 33%;
-  margin: 0 5% 0 0;
+  width: 38%;
+  margin: -66% 7% 0 0;
 }
 
 .rightContent h1 {
@@ -255,26 +270,33 @@ body {
   margin-bottom: 8%;
 }
 
+.rightContent:after p {
+  margin-bottom: 0;
+}
+
 .rightContent h2 {
   font-size: 25px;
   color: #363636;
   margin-bottom: 4%;
 }
 
-.keepTrackImg {
-  height: 100%;
+#L img {
+  position: absolute;
+  width: 32%;
   margin-left: 3%;
+  margin-top: 4%;
 }
 
-.keepTrackImg img {
-  width: 18%;
-  float: left;
-  padding-left: 2%;
+#R img {
+  position: absolute;
+  width: 32%;
+  margin-left: 23%;
+  margin-top: 13%;
 }
 
 .circleLeft {
   float: left;
-  margin: 0;
+  margin-top: 5%;
   background: #fff;
   border-radius: 50%;
   width: 850px;
@@ -286,7 +308,7 @@ body {
 
 #getPaidContainer {
   float: left;
-  padding: 15% 0;
+  padding: 12% 0;
   width: 100%;
   background-color: #fff;
 }
@@ -320,7 +342,7 @@ body {
 
 #getPaidContent {
  position: absolute;
- margin-top: 13%;
+ margin-top: 15%;
 }
 
 
@@ -335,6 +357,7 @@ body {
 }
 
 #centerContent {
+  margin-bottom: -4%;
   width: 100%;
   text-align: center;
 }
@@ -343,7 +366,7 @@ body {
   font-size: 70px;
   font-weight: lighter;
   color: #363636;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   line-height: 1.2;
 }
 
@@ -358,7 +381,7 @@ body {
 #getAppIconsContainer {
   width: 100%;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 #appStore img {

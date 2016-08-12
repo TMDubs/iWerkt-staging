@@ -17,7 +17,7 @@
 
     <!--HOME SECTION-->
   <div id='homeContainer'>
-    <div class='header'>
+  <!--  <div class='header'>
       <div id='logoContainer'>
         <div class='logo'><img src='img/iWerktLogo.jpg'></div>
       </div>
@@ -42,7 +42,7 @@
           <li>ABOUT</li>
           <li>CONTACT</li>
         </ul>
-      </div>
+      </div>-->
       <div id='CTA-buttonContainerT'>
         <div id='CTA-buttonTOnScroll'>
           <p>iOS | ANDROID</p>
@@ -88,30 +88,36 @@
       <p>iWERKT keeps track of everything and does all of the leg work for you. This way you can focus on more important things - like finding time for coffee!</p>
     </div>
     <div class='circleRight'>
-    <!-- <span class='screenShot' id='img01'><img src='img/calendarViewBlackPhone_631x800.png'></span>
-      <span class='screenShot' id='img02'><img src='img/homeViewHorizontale_631x1084.png'></span>
-    </div>-->
+      <div class='noPaperImg' id='img01'><img src='img/iPhone6Black.png'></div>
+      <div class='noPaperImg' id='img02'><img src='img/homeViewHorizontale_631x1084.png'></div>
+    </div>
   </div>
 
   <!--KEEP TRACK SECTION-->
 
   <div id='keepTrackContainer'>
     <div class='circleLeft' id='keepTrackCircle'>
-      <div class='keepTrackImg'><img src='img/homeViewHorizontalePullOut.png'></div>
-      <div class='keepTrackImg'><img src='img/voucherView.png'></div>
-      <div class='keepTrackImg'><img src='img/timePickerView.png'></div>
+      <div class='keepTrackImg' id='L'><img src='img/timePickerViewWhitePhone.png'></div>
+      <!--<div class='keepTrackImg' id='M'><img src='img/iPhone6BlackHomePullOut.png'></div>-->
+      <div class='keepTrackImg' id='R'><img src='img/voucherViewWhitePhone.png'></div>
     </div>
-    <div class='rightContent'>
+    <div class='rightContent' id='keepTrackContent'>
       <h1>Keep track of everything.</h1>
         <p>
           Track your income.
           <br>
-          Keep tabs on whether or not you've been paid for a job.
+          Keep tabs on job payments.
           <br>
           Maintain client information.
           <br>
           Export your data for tax prep.
         </p>
+        <h2>MANAGE YOUR MONEY</h2>
+        <p>iWerkt lets you see how much you've made so far, check off what you've already been paid for, and have a look at who still owes you money.</p>
+        <h2>EASY ACCCES TO CLIENT INFO</h2>
+        <p>Having all of your contact information in on place will make your life easier while you're on the go. Once you enter your client information, it will be stored and ready to be accessed at any time. The best part is that each voucher you create will auto-fill with your stored clients' information, and YOU won't have to do any extra work to make that happen!</p> 
+        <h2>TAX TIME (UG...)</h2>
+        <p>Tax time may be a real drag, but iWerkt helps make that dreaded time much more pleasant. All of your work and income data is available to you so it can be quickly exported for tax preparation.</p>
     </div>
   </div>
 
@@ -194,7 +200,7 @@
 
     <script type='text/javascript'>
       $('#CTA-buttonB').click(function(){
-      $("html, body").animate({ scrollTop: 570 }, 600);
+      $("html, body").animate({ scrollTop: 750 }, 600);
         return false;
       });
     </script>
