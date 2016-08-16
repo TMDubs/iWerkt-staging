@@ -22,8 +22,8 @@ body {
 
 .headerOnScroll {
   display: none;
-  height: 16%;
   width: 100%;
+  height: 16%;
   background-color: rgba(251,251,251,0.94);
   position: fixed;
   color: #4CC0BD;
@@ -446,9 +446,127 @@ body {
   color: #4cc0bd !important;
 }
 
+/*--------MOBILE NAVIGATION---------*/
 
 
+.mobileTriggerOpen {
+  display: none;
+  float: right;
+  white-space: nowrap;
+  margin-right: 1%;
+  margin-top: 3%;
+  font-size: 15px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: #fff; 
+  cursor: pointer; 
+}
 
+.arrowDown {
+  display: none;
+  font-size: 20px !important;
+  float: right;
+  cursor: pointer;
+  margin-top: 2.6%;
+  margin-right: 4%;
+}
+
+.fa-caret-down {
+  color: #fff;
+}
+
+.mobileTriggerClose {
+  display: none;
+  float: right;
+  white-space: nowrap;
+  margin-right: 1%;
+  margin-top: 3%;
+  font-size: 15px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+.arrowUp {
+  display: none;
+  font-size: 20px !important;
+  float: right;
+  cursor: pointer;
+  margin-top: 2.5%;
+  margin-right: 4%;
+}
+
+.fa-caret-up {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+  .mobileTriggerOpen {
+    display: initial;
+  }
+  .mobileTriggerClose {
+    display: initial;
+  }
+  .arrowDown {
+    display: initial;
+  }
+  .arrowUp {
+    display: initial;
+  }
+  #CTA-buttonT {
+    display: none;
+  }
+  #CTA-buttonContainerT {
+    display: none;
+  }
+  #menuContainer {
+  display: none;
+  }
+  #menuList {
+  display: none;
+  }
+}
+
+.overlay {
+  float: right;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #1A746E;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlayContentTop {
+  position: relative;
+  margin-top: 35%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlayContentBottom {
+  position: relative;
+  margin-top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
 
 
 

@@ -15,53 +15,101 @@
   </head>
   <body>
 
-    <!--HOME SECTION-->
-  <div id='homeContainer'>
-  <!--  <div class='header'>
-      <div id='logoContainer'>
-        <div class='logo'><img src='img/iWerktLogo.jpg'></div>
+    <!--MOBILE HOME MENU-->
+    <div id="mobileMenu" class="overlay">
+      <span class='mobileTriggerClose arrowUp' onclick='closeNav()'><i class='fa fa-caret-up' aria-hidden='true'></i></span>
+      <span class='mobileTriggerClose' onclick='closeNav()'>CLOSE</span>
+      <div class='overlayContentTop'>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
       </div>
-      <div id='menuContainer'>
-        <ul id='menuList'>
+      <div class='overlayContentBottom'>
+        <a href="#">NEED HELP?</a>
+        <a href="#">TERMS</a>
+        <a href="#">PRIVACY</a>
+      </div>
+    </div>
+    
+    <!--REGULAR HOME MENU-->
+    <div id='homeContainer'>
+      <div class='header'>
+          <span class='mobileTriggerOpen arrowDown' onclick='openNav()'><i class='fa fa-caret-down' aria-hidden='true'></i></span>
+          <span class='mobileTriggerOpen' onclick='openNav()'>HOME</span>
+
+        <div id='logoContainer'>
+          <div class='logo'><img src='img/logo1.1.png'></div>
+        </div>
+        <div id='menuContainer'>
+          <ul id='menuList'>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <div id='CTA-buttonContainerT'>
+          <div id='CTA-buttonT'>
+            <p>iOS | ANDROID</p>
+          </div>
+        </div>
+      </div>
+      <div class='headerOnScroll'>
+        <div id='logoContainer'>
+          <div class='logo'><img src='img/iWerktLogo.jpg'></div>
+        </div>
+        <div id='menuContainer'>
+          <ul id='menuList'>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <div id='CTA-buttonContainerT'>
+          <div id='CTA-buttonTOnScroll'>
+            <p>iOS | ANDROID</p>
+          </div>
+        </div>
+      </div>
+
+    <!---MOBILE MENU
+      <span class='label'>
+        <span class='currentPageLabel'>HOME</span>
+        <span class='close'>CLOSE</span>
+        <span class='arrowDown'>
+          <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </span>
+        <span class='arrowUp'>
+          <i class="fa fa-caret-up" aria-hidden="true"></i>
+        </span>
+      </span>
+    </div>
+
+    <div class='mobileNavigation'>
+      <div id='mobileNavWrapper'>
+        <ul>
           <li>ABOUT</li>
           <li>CONTACT</li>
+          <li>NEED HELP?</li>
+          <li>TERMS</li>
+          <li>PRIVACY</li>
+        </ul>
+        <ul id='mobileNavSocial'>
+          <li class='icon' id='rightMargin'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></li>
+          <li class='icon'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></li>
+          <li class='icon'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></li> 
         </ul>
       </div>
-      <div id='CTA-buttonContainerT'>
-        <div id='CTA-buttonT'>
-          <p>iOS | ANDROID</p>
+    </div>-->
+      <div id='greenScreen'>
+        <div class='slideshow'></div>
+        <div id='mainTitlesContainer'>
+          <div id='mainTitles'>
+            <h1>IWERKT</h1>
+            <h2>DIGITAL VOUCHERS 4 MODELS</h2>
+          </div>
+          <div id='CTA-buttonContainerB'>
+            <a href='#' id='CTA-buttonB'>LEARN MORE</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class='headerOnScroll'>
-      <div id='logoContainer'>
-        <div class='logo'><img src='img/iWerktLogo.jpg'></div>
-      </div>
-      <div id='menuContainer'>
-        <ul id='menuList'>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
-        </ul>
-      </div>-->
-      <div id='CTA-buttonContainerT'>
-        <div id='CTA-buttonTOnScroll'>
-          <p>iOS | ANDROID</p>
-        </div>
-      </div>
-    </div>
-    <div id='greenScreen'>
-      <div class='slideshow'></div>
-      <div id='mainTitlesContainer'>
-        <div id='mainTitles'>
-          <h1>IWERKT</h1>
-          <h2>DIGITAL VOUCHERS 4 MODELS</h2>
-        </div>
-        <div id='CTA-buttonContainerB'>
-          <a href='#' id='CTA-buttonB'>LEARN MORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <!--NO PAPER SECTION-->
   <div id='noPaperContainer'>
@@ -150,6 +198,11 @@
   </div>
       <!--<p id='textMobile'>With iWerkt, your agency's accounting department will now be able to start their billing process right away - and that means you'll get paid <i>faster!</i></p>
     </div>-->
+<!--<div style="height:1000px"></div>
+
+<p id="output" style="position:fixed; left:0; top:0; padding:10px; font-weight:bold">
+  You have scrolled the page by:
+</p>-->
 
     <!--GET THE APP SECTION-->
   <div class='headerHidden'></div>
@@ -176,6 +229,24 @@
 
     </div>
   </div>
+
+  <!--  <script>
+      var $output = $('#output')
+
+      function amountScrolled(){
+        var winHeight = $(window).height()
+        var docHeight = $(document).height()
+        var scrollTop = $(window).scrollTop()
+        var trackLength = docHeight - winHeight
+        var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+          $output.html( 'You have scrolled the page by: ' + pctScrolled +'%' )
+      }
+
+      $(window).on("scroll", function(){
+        amountScrolled()
+      })
+
+    </script>-->
 
     <script type="text/javascript">
       (function($) {          
@@ -205,5 +276,19 @@
       });
     </script>
 
+    <script type='text/javascript'>
+    /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("mobileMenu").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("mobileMenu").style.width = "0%";
+}
+    </script>
+
+
+  
   </body>
 </html>
