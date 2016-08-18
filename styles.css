@@ -1,3 +1,31 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +34,10 @@
 
 a {
   text-decoration: none !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
 }
 
 body {
@@ -25,9 +57,29 @@ body {
   width: 100%;
   height: 16%;
   background-color: rgba(251,251,251,0.94);
-  position: fixed;
-  color: #4CC0BD;
+  position: fixed; 
   z-index: 2;
+}
+
+#menuListOnScroll {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+}
+
+#menuListOnScroll a {
+  color: #4CC0BD !important;
+}
+
+#menuListOnScroll li {
+  margin: 8% 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#menuListOnScroll li a:hover {
+  color: #F46853 !important;
 }
 
 .headerHidden {
@@ -46,8 +98,17 @@ body {
 }
 
 .logo img {
+  opacity: 0;
   width: 20%;
   margin: 7% 20%;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 #menuContainer {
@@ -63,10 +124,23 @@ body {
   font-weight: bolder;
 }
 
+#menuList a {
+  color: #fff !important;
+}
+
 #menuList li {
+  opacity: 0;
   margin: 8% 2%;
   list-style: none;
   display: inline-block;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+#menuList li a:hover {
+  color: #F46853 !important;
 }
 
 #CTA-buttonContainerT {
@@ -79,6 +153,7 @@ body {
 }
 
 #CTA-buttonT {
+  opacity: 0;
   float: right;
   margin: 9% 22% 0 0;
   padding: 5% 7%;
@@ -87,6 +162,18 @@ body {
   color: #4CC0BD;
   border: solid 2px #fff;
   font-weight: bolder;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+#CTA-buttonT a {
+  color: #4cc0bd;
+}
+
+#CTA-buttonT a:hover {
+  color: #F46853 !important;
 }
 
 #CTA-buttonTOnScroll {
@@ -94,8 +181,17 @@ body {
   margin: 9% 22% 0 0;
   padding: 5% 7%;
   width: 41%;
+  color: #4cc0bd;
   border: solid 2px #4CC0BD;
   font-weight: bolder;
+}
+
+#CTA-buttonTOnScroll a {
+  color: #4cc0bd !important;
+}
+
+#CTA-buttonTOnScroll a:hover {
+  color: #F46853 !important;
 }
 
 #greenScreen {
@@ -122,6 +218,7 @@ body {
 }
 
 #mainTitles h1 {
+  opacity: 0;
   font-family: 'Frutiger LT Std' !important;
   font-weight: lighter;
   font-size: 175px;
@@ -129,13 +226,22 @@ body {
   letter-spacing: 50px;
   margin-bottom: -3%;
   margin-left: 4%;
+  -moz-animation: fadein .5s ease-in 0.75s forwards; 
+  -webkit-animation: fadein .5s ease-in 0.75s forwards; 
+  -o-animation: fadein .5s ease-in 0.75s forwards; 
+  animation: fadein .5s ease-in 0.75s forwards;
 }
 
 #mainTitles h2 {
+  opacity: 0;
   font-size: 27px;
   color: #fff;
   font-weight: lighter;
   letter-spacing: 19px;
+  -moz-animation: fadein 1s ease-in 1s forwards; 
+  -webkit-animation: fadein 1s ease-in 1s forwards; 
+  -o-animation: fadein 1s ease-in 1s forwards; 
+  animation: fadein 1s ease-in 1s forwards;
 }
 
 #CTA-buttonContainerB {
@@ -148,12 +254,17 @@ body {
 }
 
 #CTA-buttonB {
+  opacity: 0;
   margin: 15% auto;
   width: 10%;
   padding: 1.5% 2%;
   color: #fff;
   border: solid 2px #fff;
   font-weight: bolder;
+  -moz-animation: fadein .5s ease-in 3s forwards; 
+  -webkit-animation: fadein .5s ease-in 3s forwards; 
+  -o-animation: fadein .5s ease-in 3s forwards; 
+  animation: fadein .5s ease-in 3s forwards;
 }
 
 #CTA-buttonB a {
@@ -163,7 +274,7 @@ body {
 #CTA-buttonB:hover {
   background-color: rgba(255,255,255,0.8);
   color: #4CC0BD !important;
-   -o-transition:.25s;
+  -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
   -webkit-transition:.25s;
@@ -395,6 +506,10 @@ body {
   width: 19.5%;
 }
 
+#appStore:hover, #googlePlay:hover {
+  opacity: 0.8;
+}
+
 /*------FOOTER------*/
 
 .footer {
@@ -420,6 +535,11 @@ body {
   margin-top: 125%;
 }
 
+#footerLogo:hover {
+  opacity: 0.8;
+}
+
+
 .footerLink {
   margin-top: 21%;
   float: right;
@@ -428,6 +548,10 @@ body {
   font-weight: bolder;
   letter-spacing: 6px;
   color: #4cc0bd;
+}
+
+.footerLink:hover {
+  color: #f46853 !important;
 }
 
 #rightMargin {
@@ -444,6 +568,14 @@ body {
   float: right;
   padding-left: 2%;
   color: #4cc0bd !important;
+}
+
+.fa:hover {
+  color: #F46853 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
 }
 
 /*--------MOBILE NAVIGATION---------*/
