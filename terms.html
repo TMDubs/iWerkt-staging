@@ -1,0 +1,913 @@
+<!---IWERKT 1.3 Staging-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>TERMS OF USE</title>
+
+      <meta charset='utf-8'>
+      <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
+      <link rel="stylesheet" href='font-awesome-4.6.3/css/font-awesome.min.css'>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+
+  </head>
+  <style>
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+}
+
+body {
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+.header {
+  height: 16%;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+}
+
+.headerOnScroll {
+  display: none;
+  width: 100%;
+  height: 16%;
+  background-color: rgba(251,251,251,0.94);
+  position: fixed; 
+  z-index: 2;
+}
+
+#menuListOnScroll {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+}
+
+#menuListOnScroll a {
+  color: #4CC0BD !important;
+}
+
+#menuListOnScroll li {
+  margin: 8% 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#menuListOnScroll li a:hover {
+  color: #F46853 !important;
+}
+
+.headerHidden {
+  display: none;
+  position: fixed;
+  background-color: black;
+  height: 16%;
+  width: 100%;
+  z-index: 1;
+}
+
+#logoContainer {
+  float: left;
+  width: 26%;
+  height: 100%;
+}
+
+.logo img {
+  opacity: 0;
+  width: 20%;
+  margin: 7% 20%;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+#logoOnScroll img {
+  width: 20%;
+  margin: 7% 20%;
+}
+
+#logoOnScroll:hover {
+  opacity: 0.8;
+}
+
+#menuContainer {
+  width: 48%;
+  height: 100%;
+  float: left;
+}
+
+#menuList {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+}
+
+#menuList a {
+  color: #fff !important;
+}
+
+#menuList li {
+  opacity: 0;
+  margin: 8% 2%;
+  list-style: none;
+  display: inline-block;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+#menuList li a:hover {
+  color: #F46853 !important;
+}
+
+#CTA-buttonContainerT {
+  width: 26%;
+  height: 100%;
+  float: right;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+#CTA-buttonT {
+  opacity: 0;
+  float: right;
+  margin: 9% 22% 0 0;
+  padding: 5% 7%;
+  width: 41%;
+  background-color: #fff;
+  color: #4CC0BD;
+  border: solid 2px #fff;
+  font-weight: bolder;
+  -moz-animation: fadein .5s ease-in 2s forwards; 
+  -webkit-animation: fadein .5s ease-in 2s forwards; 
+  -o-animation: fadein .5s ease-in 2s forwards; 
+  animation: fadein .5s ease-in 2s forwards;
+}
+
+#CTA-buttonT a {
+  color: #4cc0bd;
+}
+
+#CTA-buttonT a:hover {
+  color: #F46853 !important;
+}
+
+#CTA-buttonTOnScroll {
+  float: right;
+  margin: 9% 22% 0 0;
+  padding: 5% 7%;
+  width: 41%;
+  color: #4cc0bd;
+  border: solid 2px #4CC0BD;
+  font-weight: bolder;
+}
+
+#CTA-buttonTOnScroll a {
+  color: #4cc0bd !important;
+}
+
+#CTA-buttonTOnScroll a:hover {
+  color: #F46853 !important;
+}
+
+#greenScreen {
+  height: 55vh;
+  background-color: rgba(0, 224, 213, 0.4); 
+}
+
+.slideshow {
+  height: 55vh;
+  z-index: -9999;
+  position: relative;
+}
+
+#mainTitlesContainer {
+  position: relative;
+  z-index: 1;
+  margin: -15% auto;
+  width: 100%;
+}
+
+#mainTitles {
+  width: 100%;
+  text-align: center;
+}
+
+#mainTitles h1 {
+  opacity: 0;
+  font-family: 'Frutiger LT Std' !important;
+  font-weight: lighter;
+  font-size: 80px;
+  color: #fff;
+  letter-spacing: 10px;
+  margin-bottom: 0%;
+  -moz-animation: fadein .5s ease-in 0.75s forwards; 
+  -webkit-animation: fadein .5s ease-in 0.75s forwards; 
+  -o-animation: fadein .5s ease-in 0.75s forwards; 
+  animation: fadein .5s ease-in 0.75s forwards;
+}
+
+#mainTitles h2 {
+  opacity: 0;
+  font-size: 22px;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 10px;
+  -moz-animation: fadein 1s ease-in 1s forwards; 
+  -webkit-animation: fadein 1s ease-in 1s forwards; 
+  -o-animation: fadein 1s ease-in 1s forwards; 
+  animation: fadein 1s ease-in 1s forwards;
+}
+
+.privacyContainer {
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  background-color: #F5F5F5;
+}
+
+.bodyContainer {
+  width: 90%;
+  background-color: #F5F5F5;
+  margin: 8% auto;
+}
+
+.bodyContainer h1 {
+  font-weight: lighter;
+  font-size: 35px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.bodyContainer h2 {
+  font-weight: lighter;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.privacyBody {
+  width: 85%;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #363636;
+  text-align: justify;
+  margin: 5% auto;
+}
+
+.privacyBody a {
+  color: #363636;
+}
+
+/*--------MOBILE NAVIGATION---------*/
+
+
+.mobileTriggerOpen {
+  display: none;
+  float: right;
+  white-space: nowrap;
+  margin-right: 1%;
+  margin-top: 3%;
+  font-size: 15px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+.arrowDown {
+  display: none;
+  font-size: 20px !important;
+  float: right;
+  cursor: pointer;
+  margin-top: 2.6%;
+  margin-right: 4%;
+}
+
+.fa-caret-down {
+  color: #fff;
+}
+
+.mobileTriggerClose {
+  display: none;
+  float: right;
+  white-space: nowrap;
+  margin-right: 1%;
+  margin-top: 3%;
+  font-size: 15px;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+.arrowUp {
+  display: none;
+  font-size: 20px !important;
+  float: right;
+  cursor: pointer;
+  margin-top: 2.5%;
+  margin-right: 4%;
+}
+
+.fa-caret-up {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1023px) {
+  .mobileTriggerOpen {
+    display: initial;
+  }
+  .mobileTriggerClose {
+    display: initial;
+  }
+  .arrowDown {
+    display: initial;
+  }
+  .arrowUp {
+    display: initial;
+  }
+  #CTA-buttonT {
+    display: none;
+  }
+  #CTA-buttonContainerT {
+    display: none;
+  }
+  #menuContainer {
+  display: none;
+  }
+  #menuList {
+  display: none;
+  }
+}
+
+.overlay {
+  float: right;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #1A746E;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlayContentTop {
+  position: relative;
+  margin-top: 35%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlayContentBottom {
+  position: relative;
+  margin-top: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.footer {
+  float: left;
+  margin-top: 2%;
+  border-top: solid 2px #4CC0BD;
+  height: 50vh;
+  background-color: #fff;
+  width: 100%;
+  -webkit-clip-path: polygon(0 64%, 100% 6%, 100% 100%, 0 100%);
+  clip-path: polygon(0 64%, 100% 6%, 100% 100%, 0 100%);
+}
+
+#footerLogoContainer {
+  float: left;
+  width: 15%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+#footerLogo img {
+  width: 36%;
+  margin-top: 125%;
+}
+
+#footerLogo:hover {
+  opacity: 0.8;
+}
+
+.footerLink {
+  margin-top: 21%;
+  float: right;
+  padding-left: 2%;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  color: #4cc0bd;
+}
+
+.footerLink:hover {
+  color: #f46853 !important;
+}
+
+#rightMargin {
+  margin-right: 5%;
+}
+
+.fa {
+  color: #4cc0bd;
+}
+
+.icon {
+  font-size: 25px !important;
+  margin-top: 20.5%;
+  float: right;
+  padding-left: 2%;
+  color: #4cc0bd !important;
+}
+
+.fa:hover {
+  color: #F46853 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+}
+
+
+  </style>
+  <body>
+    <!--MOBILE HOME MENU-->
+    <div id="mobileMenu" class="overlay">
+      <span class='mobileTriggerClose arrowUp' onclick='closeNav()'><i class='fa fa-caret-up' aria-hidden='true'></i></span>
+      <span class='mobileTriggerClose' onclick='closeNav()'>CLOSE</span>
+      <div class='overlayContentTop'>
+        <a href='about.html'>ABOUT</a>
+        <a href='contact.html'>CONTACT</a>
+      </div>
+      <div class='overlayContentBottom'>
+        <a href='needHelp.html'>NEED HELP?</a>
+        <a href='terms.html'>TERMS</a>
+        <a href='privacy.html'>PRIVACY</a>
+      </div>
+    </div>
+     <!--REGULAR HOME MENU-->
+    <div id='homeContainer'>
+      <div class='header'>
+          <span class='mobileTriggerOpen arrowDown' onclick='openNav()'><i class='fa fa-caret-down' aria-hidden='true'></i></span>
+          <span class='mobileTriggerOpen' onclick='openNav()'>HOME</span>
+
+        <div id='logoContainer'>
+          <div><a href='index.html' class='logo'><img src='img/logo1.1.png'></a></div>
+        </div>
+        <div id='menuContainer'>
+          <ul id='menuList'>
+            <li><a href='about/index.html'>ABOUT</a></li>
+            <li><a href='contact/index.html'>CONTACT</a></li>
+          </ul>
+        </div>
+        <div id='CTA-buttonContainerT'>
+          <div id='CTA-buttonT'>
+            <p><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en'>ANDROID</a></p>
+          </div>
+        </div>
+      </div>
+      <div class='headerOnScroll'>
+        <div id='logoContainer'>
+          <div><a href='index.html' id='logoOnScroll'><img src='img/iWerktLogo.jpg'></a></div>
+        </div>
+        <div id='menuContainer'>
+          <ul id='menuListOnScroll'>
+            <li><a href='about.html'>ABOUT</a></li>
+            <li><a href='contact.html'>CONTACT</a></li>
+          </ul>
+        </div>
+        <div id='CTA-buttonContainerT'>
+          <div id='CTA-buttonTOnScroll'>
+            <p><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en'>ANDROID</a></p>
+          </div>
+        </div>
+      </div>
+     <div id='greenScreen'>
+        <div class='slideshow'></div>
+        <div id='mainTitlesContainer'>
+          <div id='mainTitles'>
+            <h1>Terms of Use</h1>
+            <h2>THE FINE PRINT</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+       <!--MOBILE HOME MENU-->
+      <div id="mobileMenu" class="overlay">
+        <span class='mobileTriggerClose arrowUp' onclick='closeNav()'><i class='fa fa-caret-up' aria-hidden='true'></i></span>
+        <span class='mobileTriggerClose' onclick='closeNav()'>CLOSE</span>
+        <div class='overlayContentTop'>
+          <a href='about.html'>ABOUT</a>
+          <a href='contact.html'>CONTACT</a>
+        </div>
+        <div class='overlayContentBottom'>
+          <a href='needHelp.html'>NEED HELP?</a>
+          <a href='terms.html'>TERMS</a>
+          <a href='privacy.html'>PRIVACY</a>
+        </div>
+      </div>
+
+      <div class='header'>
+          <span class='mobileTriggerOpen arrowDown' onclick='openNav()'><i class='fa fa-caret-down' aria-hidden='true'></i></span>
+          <span class='mobileTriggerOpen' onclick='openNav()'>HOME</span>
+
+        <div id='logoContainer'>
+          <div><a href='index.html' class='logo'><img src='img/logo1.1.png'></a></div>
+        </div>
+        <div id='menuContainer'>
+          <ul id='menuList'>
+            <li><a href='about/index.html'>ABOUT</a></li>
+            <li><a href='contact/index.html'>CONTACT</a></li>
+          </ul>
+        </div>
+        <div id='CTA-buttonContainerT'>
+          <div id='CTA-buttonT'>
+            <p><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en'>ANDROID</a></p>
+          </div>
+        </div>
+      </div>
+
+      
+    <div class='privacyContainer'>
+      <div class='bodyContainer'>
+        <h2>LAST MODIFIED: JUNE 28, 2016</h2>
+        <p class='privacyBody' id='bodyText'>
+        <b>ACCEPTANCE OF THE TERMS OF USE</b>
+          <br>
+          Welcome to the website/app of iWerkt, Inc. ("<b>Company</b>", "<b>we</b>" or "<b>us</b>"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these "<b>Terms of Use</b>"), govern your access to and use of <b><a href='/'>www.iwerkt.com</a></b>, including any content, functionality and services offered on or through <b><a href='http://www.iwerkt.com'>www.iwerkt.com</a></b> (the "<b>Website</b>"), and/or <b>iWerkt</b> application (the "<b>APP</b>"), whether as a guest or a registered user.
+          <br><br>
+          Please read the Terms of Use carefully before you start to use the Website/App. <b>By using the Website/App, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at <b><a href='/privacy.html'>www.iwerkt.com/privacy</a></b>, incorporated herein by reference.</b> If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website/App. 
+          <br><br>
+          This Website/App is offered and available to users who are 13 years of age or older, and. By using this Website/App, you represent and warrant that you are of legal age to form a binding contract with the Company and meet all of the foregoing eligibility requirements. If you do not meet all of these requirements, you must not access or use the Website/App.
+          <br><br>
+          <b>CHANGES TO THE TERMS OF USE</b>
+          <br>We may revise and update these Terms of Use from time to time in our sole discretion. All changes are effective immediately when we post them, and apply to all access to and use of the Website/App thereafter. However, any changes to the dispute resolution provisions set forth in Governing Law and Jurisdiction will not apply to any disputes for which the parties have actual notice on or prior to the date the change is posted on the Website/App. 
+          <br><br>
+          Your continued use of the Website/App following the posting of revised Terms of Use means that you accept and agree to the changes. You are expected to check this page from time to time so you are aware of any changes, as they are binding on you. 
+          <br><br>
+          <b>ACCESSING THE WEBSITE/APP AND ACCOUNT SECURITY</b>
+          <br>
+          We reserve the right to withdraw or amend this Website/App, and any service or material we provide on the Website/App, in our sole discretion without notice. We will not be liable if for any reason all or any part of the Website/App is unavailable at any time or for any period. From time to time, we may restrict access to some parts of the Website/App, or the entire Website/App, to users, including registered users.
+          <br><br>
+          You are responsible for:
+          <br>
+          &#8226 Making all arrangements necessary for you to have access to the Website/App.
+          <br>
+          &#8226 Ensuring that all persons who access the Website/App through your internet connection are aware of these Terms of Use and comply with them.
+          <br><br>
+          To access the Website/App or some of the resources it offers, you may be asked to provide certain registration details or other information. It is a condition of your use of the Website/App that all the information you provide on the Website/App is correct, current and complete. You agree that all information you provide to register with this Website/App or otherwise, including but not limited to through the use of any interactive features on the Website/App, is governed by our <i>Privacy Policy</i> <b><a href='/privacy.html'>www.iwerkt.com/privacy</a></b>, and you consent to all actions we take with respect to your information consistent with our Privacy Policy.
+          <br><br>
+          If you choose, or are provided with, a user name, password or any other piece of information as part of our security procedures, you must treat such information as confidential, and you must not disclose it to any other person or entity. You also acknowledge that your account is personal to you and agree not to provide any other person with access to this Website/App or portions of it using your user name, password or other security information. You agree to notify us immediately of any unauthorized access to or use of your user name or password or any other breach of security. You also agree to ensure that you exit from your account at the end of each session. You should use particular caution when accessing your account from a public or shared computer so that others are not able to view or record your password or other personal information.
+          <br><br>
+          We have the right to disable any user name, password or other identifier, whether chosen by you or provided by us, at any time in our sole discretion for any or no reason, including if, in our opinion, you have violated any provision of these Terms of Use.
+          <br><br>
+          <b>INTELLECTUAL PROPERTY RIGHTS</b>
+          <br>
+          The Website/App and its entire contents, features and functionality (including but not limited to all information, software, text, displays, images, video and audio, and the design, selection and arrangement thereof), are owned by the Company, its licensors or other providers of such material and are protected by United States and international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws.
+          <br><br>
+          These Terms of Use permit you to use the Website/App for your personal, non-commercial use only. You must not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store or transmit any of the material on our Website/App, except as follows:
+          <br><br>
+           &#8226 Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials.
+          <br>
+           &#8226 You may store files that are automatically cached by your Web browser for display enhancement purposes.
+          <br>
+           &#8226 You may print or download one copy of a reasonable number of pages of the Website/App for your own personal, non-commercial use and not for further reproduction, publication or distribution.
+          <br>
+           &#8226 If we provide desktop, mobile or other applications for download, you may download a single copy to your computer or mobile device solely for your own personal, non-commercial use, provided you agree to be bound by our end user license agreement for such applications.
+          <br>
+           &#8226 If we provide <i>social media features</i> <b><a>www.iwerkt.com/socialmedia</a></b> with certain content, you make take such actions as are enabled by such features.
+          <br><br>
+          You must not:
+          <br>
+          &#8226 Modify copies of any materials from this site.
+          <br>
+          &#8226 Use any illustrations, photographs, video or audio sequences or any graphics separately from the accompanying text.
+          <br>
+          &#8226 Delete or alter any copyright, trademark or other proprietary rights notices from copies of materials from this site.
+          <br><br>
+          You must not access or use for any commercial purposes any part of the Website/App or any services or materials available through the Website/App. 
+          <br><br>
+          If you wish to make any use of material on the Website/App other than that set out in this section, please address your request to: <b><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>info@iwerkt.com</a></b>.
+          <br><br>
+          If you print, copy, modify, download or otherwise use or provide any other person with access to any part of the Website in breach of the Terms of Use, your right to use the Website/App will cease immediately and you must, at our option, return or destroy any copies of the materials you have made. No right, title or interest in or to the Website/App or any content on the site is transferred to you, and all rights not expressly granted are reserved by the Company. Any use of the Website/App not expressly permitted by these Terms of Use is a breach of these Terms of Use and may violate copyright, trademark and other laws.
+          <br><br>
+          <b>TRADEMARKS</b>
+          <br>
+          The Company name, the terms iWerkt, the Company logo and all related names, logos, product and service names, designs and slogans are trademarks of the Company or its affiliates or licensors. You must not use such marks without the prior written permission of the Company. All other names, logos, product and service names, designs and slogans on this Website/App are the trademarks of their respective owners.
+          <br><br>
+          <b>PROHIBITED USES</b>
+          <br>
+          You may use the Website/App only for lawful purposes and in accordance with these Terms of Use. You agree not to use the Website/App:
+          <br>
+          &#8226 In any way that violates any applicable federal, state, local or international law or regulation (including, without limitation, any laws regarding the export of data or software to and from the US or other countries). 
+          <br>
+          &#8226 For the purpose of exploiting, harming or attempting to exploit or harm minors in any way by exposing them to inappropriate content, asking for personally identifiable information or otherwise.
+          <br>
+          &#8226 To send, knowingly receive, upload, download, use or re-use any material which does not comply with the Content Standards <b><a>www.iwerkt.com/content</a></b> set out in these Terms.
+          <br>
+          &#8226 To transmit, or procure the sending of, any advertising or promotional material without our prior written consent, including any "junk mail", "chain letter" or "spam" or any other similar solicitation.
+          <br>
+          &#8226 To impersonate or attempt to impersonate the Company, a Company employee, another user or any other person or entity (including, without limitation, by using e-mail addresses or screen names associated with any of the foregoing).
+          <br>
+          &#8226 To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Website/App, or which, as determined by us, may harm the Company or users of the Website/App or expose them to liability.
+          <br><br>
+          Additionally, you agree not to:
+          <br>
+          &#8226 Use the Website/App in any manner that could disable, overburden, damage, or impair the site or interfere with any other party's use of the Website/App, including their ability to engage in real time activities through the Website/App.
+          <br>
+          &#8226 Use any robot, spider or other automatic device, process or means to access the Website/App for any purpose, including monitoring or copying any of the material on the Website/App.
+          <br>
+          &#8226 Use any manual process to monitor or copy any of the material on the Website/App or for any other unauthorized purpose without our prior written consent.
+          <br>
+          &#8226 Use any device, software or routine that interferes with the proper working of the Website/App.
+          <br>
+          &#8226 Introduce any viruses, trojan horses, worms, logic bombs or other material which is malicious or technologically harmful.
+          <br>
+          &#8226 Attempt to gain unauthorized access to, interfere with, damage or disrupt any parts of the Website/App, the server on which the Website/App is stored, or any server, computer or database connected to the Website/App.
+          <br> 
+          &#8226 Attack the Website/App via a denial-of-service attack or a distributed denial-of-service attack.
+          <br>
+          &#8226 Otherwise attempt to interfere with the proper working of the Website/App.
+          <br><br>
+          <b>USER CONTRIBUTIONS</b>
+          <br>
+          The Website/App may contain message boards, chat rooms, personal web pages or profiles, forums, bulletin boards, and other interactive features (collectively, "<b>Interactive Services</b>") that allow users to post, submit, publish, display or transmit to other users or other persons (hereinafter, "<b>post</b>") content or materials (collectively, "<b>User Contributions</b>") on or through the Website/App.
+          <br><br>
+          All User Contributions must comply with the Content Standards set out in these Terms of Use.
+          <br><br>
+          Any User Contribution you post to the site will be considered non-confidential and non-proprietary. By providing any User Contribution on the Website/App, you grant us and our affiliates and service providers, and each of their and our respective licensees, successors and assigns the right to use, reproduce, modify, perform, display, distribute and otherwise disclose to third parties any such material for any purpose. 
+          <br><br>
+          You represent and warrant that: 
+          <br>
+          &#8226 You own or control all rights in and to the User Contributions and have the right to grant the license granted above to us and our affiliates and service providers, and each of their and our respective licensees, successors and assigns.
+          <br>
+          &#8226 All of your User Contributions do and will comply with these Terms of Use. 
+          <br><br>
+           We are not responsible, or liable to any third party, for the content or accuracy of any User Contributions posted by you or any other user of the Website/App. 
+          <br><br>
+          <b>MONITORING AND ENFORCEMENT; TERMINATION</b>
+          <br>
+          We have the right to:
+          <br>
+          &#8226 Remove or refuse to post any User Contributions for any or no reason in our sole discretion.
+          <br>
+          &#8226 Take any action with respect to any User Contribution that we deem necessary or appropriate in our sole discretion, including if we believe that such User Contribution violates the Terms of Use, including the Content Standards, infringes any intellectual property right or other right of any person or entity, threatens the personal safety of users of the Website/App or the public or could create liability for the Company.
+          Disclose your identity or other information about you to any third party who claims that material posted by you violates their rights, including their intellectual property rights or their right to privacy.
+          <br>
+          &#8226 Take appropriate legal action, including without limitation, referral to law enforcement, for any illegal or unauthorized use of the Website/App.
+          <br> 
+          &#8226 Terminate or suspend your access to all or part of the Website/App for any or no reason, including without limitation, any violation of these Terms of Use.
+          <br><br>
+          Without limiting the foregoing, we have the right to fully cooperate with any law enforcement authorities or court order requesting or directing us to disclose the identity or other information of anyone posting any materials on or through the Website/App. YOU WAIVE AND HOLD HARMLESS THE COMPANY AND ITS AFFILIATES, LICENSEES AND SERVICE PROVIDERS FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY OF THE FOREGOING PARTIES DURING OR AS A RESULT OF ITS INVESTIGATIONS AND FROM ANY ACTIONS TAKEN AS A CONSEQUENCE OF INVESTIGATIONS BY EITHER SUCH PARTIES OR LAW ENFORCEMENT AUTHORITIES.
+          <br><br>
+          However, we cannot review all material before it is posted on the Website/App, and cannot ensure prompt removal of objectionable material after it has been posted. Accordingly, we assume no liability for any action or inaction regarding transmissions, communications or content provided by any user or third party. We have no liability or responsibility to anyone for performance or nonperformance of the activities described in this section. 
+          <br><br>
+          <b>CONTENT STANDARDS</b>
+          <br>
+          These content standards apply to any and all User Contributions and use of Interactive Services. User Contributions must in their entirety comply with all applicable federal, state, local and international laws and regulations. Without limiting the foregoing, User Contributions must not:
+          <br><br>
+          &#8226 Contain any material which is defamatory, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory or otherwise objectionable.
+          <br>
+          &#8226 Promote sexually explicit or pornographic material, violence, or discrimination based on race, sex, religion, nationality, disability, sexual orientation or age.
+          <br>
+          &#8226 Infringe any patent, trademark, trade secret, copyright or other intellectual property or other rights of any other person.
+          <br>
+          &#8226 Violate the legal rights (including the rights of publicity and privacy) of others or contain any material that could give rise to any civil or criminal liability under applicable laws or regulations or that otherwise may be in conflict with these Terms of Use and our Privacy Policy <b><a href='http://www.iwerkt.com/privacy.html'>www.iwerkt.com/privacy</a></b>.
+          <br>
+          &#8226 Be likely to deceive any person.
+          <br>
+          &#8226 Promote any illegal activity, or advocate, promote or assist any unlawful act.
+          <br>
+          &#8226 Cause annoyance, inconvenience or needless anxiety or be likely to upset, embarrass, alarm or annoy any other person.
+          <br>
+          &#8226 Impersonate any person, or misrepresent your identity or affiliation with any person or organization. 
+          <br>
+          &#8226 Involve commercial activities or sales, such as contests, sweepstakes and other sales promotions, barter or advertising.
+          <br>
+          &#8226 Give the impression that they emanate from or are endorsed by us or any other person or entity, if this is not the case.
+          <br><br>
+          <b>COPYRIGHT INFRINGEMENT</b>
+          <br>
+          If you believe that any User Contributions violate your copyright, please see our Copyright Policy <b><a>www.iwerkt.com/copyright</a></b> for instructions on sending us a notice of copyright infringement. It is the policy of the Company to terminate the user accounts of repeat infringers. 
+          <br><br>
+          <b>RELIANCE ON INFORMATION POSTED</b>
+          <br>
+          The information presented on or through the Website/App is made available solely for general information purposes. We do not warrant the accuracy, completeness or usefulness of this information. Any reliance you place on such information is strictly at your own risk. We disclaim all liability and responsibility arising from any reliance placed on such materials by you or any other visitor to the Website/App, or by anyone who may be informed of any of its contents.
+          <br><br>
+          This Website/App may include content provided by third parties, including materials provided by other users, bloggers and third-party licensors, syndicators, aggregators and/or reporting services. All statements and/or opinions expressed in these materials, and all articles and responses to questions and other content, other than the content provided by the Company, are solely the opinions and the responsibility of the person or entity providing those materials. These materials do not necessarily reflect the opinion of the Company. We are not responsible, or liable to you or any third party, for the content or accuracy of any materials provided by any third parties.
+          <br><br>
+          <b>CHANGES TO THE WEBSITE/APP</b>
+          <br>
+          We may update the content on this Website/App from time to time, but its content is not necessarily complete or up-to-date. Any of the material on the Website/App may be out of date at any given time, and we are under no obligation to update such material. 
+          <br><br>
+          <b>INORMATION ABOUT YOU AND YOUR VISITS TO THE WEBSITE/APP</b>
+          <br>
+          All information we collect on this Website/App is subject to our Privacy Policy <b><a href='/privacy.html'>www.iwerkt.com/privacy</a></b>. By using the Website/App, you consent to all actions taken by us with respect to your information in compliance with the Privacy Policy. 
+          <br><br>
+          <b>LINKING TO THE WEBSITE/APP AND SOCIAL MEDIA FEATURES</b>
+          <br>
+          You may link to our homepage, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it, but you must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part without our express written consent. 
+          <br><br>
+          This Website/App may provide certain social media features that enable you to:
+          <br>
+          &#8226 Link from your own or certain third-party websites/apps to certain content on this Website/App.
+          <br>
+          &#8226 Send e-mails or other communications with certain content, or links to certain content, on this Website/App.
+          <br>
+          &#8226 Cause limited portions of content on this Website/App to be displayed or appear to be displayed on your own or certain third-party websites.
+          <br><br>
+          You may use these features solely as they are provided by us, and solely with respect to the content they are displayed with and otherwise in accordance with any additional terms and conditions we provide with respect to such features. Subject to the foregoing, you must not:
+          <br><br>
+           &#8226 Establish a link from any website/app that is not owned by you.
+          <br>
+           &#8226 Cause the Website/App or portions of it to be displayed, or appear to be displayed by, for example, framing, deep linking or in-line linking, on any other site.
+          <br>
+           &#8226 Link to any part of the Website/App other than the homepage.
+          <br>
+           &#8226 Otherwise take any action with respect to the materials on this Website/App that is inconsistent with any other provision of these Terms of Use.
+          <br><br>
+          The website from which you are linking, or on which you make certain content accessible, must comply in all respects with the Content Standards set out in these Terms of Use.
+          <br><br>
+          You agree to cooperate with us in causing any unauthorized framing or linking immediately to cease. We reserve the right to withdraw linking permission without notice.
+          <br><br>
+          We may disable all or any social media features and any links at any time without notice in our discretion. 
+          <br><br>
+          <b>LINKS FROM THE WEBSITE/APP</b>
+          <br>
+          If the Website/App contains links to other sites and resources provided by third parties, these links are provided for your convenience only. This includes links contained in advertisements, including banner advertisements and sponsored links. We have no control over the contents of those sites or resources, and accept no responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any of the third party websites/apps linked to this Website/App, you do so entirely at your own risk and subject to the terms and conditions of use for such websites/apps.
+          <br><br>
+          <b>GEOGRAPHIC RESTRICTIONS</b>
+          <br>
+          The owner of the Website/App is based in the state of Delaware in the United States. We provide this Website/App for use only by persons located in the United States. We make no claims that the Website/App or any of its content is accessible or appropriate outside of the United States. Access to the Website/App may not be legal by certain persons or in certain countries. If you access the Website/App from outside the United States, you do so on your own initiative and are responsible for compliance with local laws.
+          <br><br>
+          <b>Disclaimer of Warranties</b>
+          <br>
+          You understand that we cannot and do not guarantee or warrant that files available for downloading from the internet or the Website/App will be free of viruses or other destructive code. You are responsible for implementing sufficient procedures and checkpoints to satisfy your particular requirements for anti-virus protection and accuracy of data input and output, and for maintaining a means external to our site for any reconstruction of any lost data. WE WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE CAUSED BY A DISTRIBUTED DENIAL-OF-SERVICE ATTACK, VIRUSES OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE WEBSITE/APP OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP OR TO YOUR DOWNLOADING OF ANY MATERIAL POSTED ON IT, OR ON ANY WEBSITE/APP LINKED TO IT.
+          <br><br>
+          YOUR USE OF THE WEBSITE/APP, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP IS AT YOUR OWN RISK. THE WEBSITE, ITS CONTENT AND ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. NEITHER THE COMPANY NOR ANY PERSON ASSOCIATED WITH THE COMPANY MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY OR AVAILABILITY OF THE WEBSITE/APP. WITHOUT LIMITING THE FOREGOING, NEITHER THE COMPANY NOR ANYONE ASSOCIATED WITH THE COMPANY REPRESENTS OR WARRANTS THAT THE WEBSITE/APP, ITS CONTENT OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP WILL BE ACCURATE, RELIABLE, ERROR-FREE OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT OUR SITE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE WEBSITE/APP OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS. 
+          <br><br>
+          THE COMPANY HEREBY DISCLAIMS ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT AND FITNESS FOR PARTICULAR PURPOSE.
+          <br><br>
+          THE FOREGOING DOES NOT AFFECT ANY WARRANTIES WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+          <br><br>
+          <b>LIMITATION ON LIABILITY</b>
+          <br>
+          IN NO EVENT WILL THE COMPANY, ITS AFFILIATES OR THEIR LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE WEBSITE/APP, ANY WEBSITES/APPS LINKED TO IT, ANY CONTENT ON THE WEBSITE/APP OR SUCH OTHER WEBSITES/APPS OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE WEBSITE/APP OR SUCH OTHER WEBSITES/APPS, INCLUDING ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE, EVEN IF FORESEEABLE.
+          <br><br>
+          THE FOREGOING DOES NOT AFFECT ANY LIABILITY WHICH CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
+          <br><br>
+          <b>INDEMNIFICATION</b>
+          <br>
+          You agree to defend, indemnify and hold harmless the Company, its affiliates, licensors and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms of Use or your use of the Website/App, including, but not limited to, your User Contributions, any use of the Website's/App's content, services and products other than as expressly authorized in these Terms of Use or your use of any information obtained from the Website/App.
+          <br><br>
+          <b>GOVERNING LAW AND JURISDICTION</b>
+          <br>
+          All matters relating to the Website/App and these Terms of Use and any dispute or claim arising therefrom or related thereto (in each case, including non-contractual disputes or claims), shall be governed by and construed in accordance with the internal laws of the State of New York without giving effect to any choice or conflict of law provision or rule (whether of the State of New York or any other jurisdiction).
+          <br><br>
+          Any legal suit, action or proceeding arising out of, or related to, these Terms of Use or the Website/App shall be instituted exclusively in the federal courts of the United States or the courts of the State of New York in each case located in the City of New York and County of New York, although we retain the right to bring any suit, action or proceeding against you for breach of these Terms of Use in your country of residence or any other relevant country. You waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts.
+          <br><br>
+          <b>LIMITATION ON TIME TO FILE</b>
+          <br>
+          ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF USE OR THE WEBSITE/APP MUST BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM IS PERMANENTLY BARRED.
+          <br><br>
+          <b>WAIVER AND SEVERABILITY</b>
+          <br>
+          No waiver of by the Company of any term or condition set forth in these Terms of Use shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of the Company to assert a right or provision under these Terms of Use shall not constitute a waiver of such right or provision.
+          <br><br>
+          If any provision of these Terms of Use is held by a court or other tribunal of competent jurisdiction to be invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the minimum extent such that the remaining provisions of the Terms of Use will continue in full force and effect. 
+          <br><br>
+          <b>ENTIRE AGREEMENT</b>
+          <br>
+          The Terms of Use and our Privacy Policy constitute the sole and entire agreement between you and iWerkt, Inc. with respect to the Website/App and supersede all prior and contemporaneous understandings, agreements, representations and warranties, both written and oral, with respect to the Website/App. 
+          <br><br>
+          <b>YOUR COMMENTS AND CONCERNS</b>
+          <br>
+          This website/app is operated by iWerkt, Inc., 225 West 34th Street, Suite 2000, New York, NY 10122.
+          <br><br>
+          All notices of copyright infringement claims should be sent to the copyright agent designated in our Copyright Policy <b><a>www.iwerkt.com/copyright</a></b> in the manner and by the means set forth therein.
+          <br><br>
+          All other feedback, comments, requests for technical support and other communications relating to the Website/App should be directed to: <b><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>info@iwerkt.com</a></b>. 
+          <br><br>
+          Thank you for visiting the Website and for using our App.
+        </p>
+      </div>
+      <div class='footer'>
+        <span class='icon' id='rightMargin'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></span>
+        <span class='icon'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter-square'></i></a></span>
+        <span class='icon'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook-square'></i></a></span> 
+        <span><a href='terms.html' class='footerLink'>TERMS</a></span>
+        <span><a href='privacy.html' class='footerLink'>PRIVACY</a></span>
+        <span><a href='needHelp.html' class='footerLink'>NEED HELP?</a></span>
+    </div>
+    </div>
+
+      <script type="text/javascript">
+      (function($) {          
+        $(document).ready(function(){                    
+          $(window).scroll(function(){                        
+            if ($(this).scrollTop() > 10) {
+              $('.headerOnScroll').fadeIn(250);
+            } 
+            else {
+              $('.headerOnScroll').fadeOut(250);
+            }
+          });
+        });
+      })(jQuery);
+    </script>
+
+    <script type='text/javascript'>
+      $('.slideshow').backstretch(
+        ['img/slideshow/02.jpg']
+      );
+    </script>
+
+    <script type='text/javascript'>
+      $('#CTA-buttonB').click(function(){
+      $("html, body").animate({ scrollTop: 750 }, 600);
+        return false;
+      });
+    </script>
+
+    <script type='text/javascript'>
+    /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("mobileMenu").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("mobileMenu").style.width = "0%";
+}
+    </script>
+   
+  </body>
+</html>
