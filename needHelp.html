@@ -14,6 +14,17 @@
   </head>
   <style>
 
+@font-face {
+  font-family: regular;
+  src: url(fonts/frutigerLTStd_Light.woff);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(fonts/frutigerLTStd_Bold.woff);
+  font-weight: bold;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -45,7 +56,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -62,6 +72,7 @@ a:hover {
 }
 
 body {
+  font-family: regular;
   background-color: #fff;
   text-rendering: optimizeLegibility;
 }
@@ -86,7 +97,7 @@ body {
   text-align: center;
   font-size: 12px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #menuListOnScroll a {
@@ -151,7 +162,7 @@ body {
   text-align: center;
   font-size: 12px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #menuList a {
@@ -191,7 +202,7 @@ body {
   background-color: #fff;
   color: #4CC0BD;
   border: solid 2px #fff;
-  font-weight: bolder;
+  font-family: bold;
   -moz-animation: fadein .5s ease-in 1s forwards; 
   -webkit-animation: fadein .5s ease-in 1s forwards; 
   -o-animation: fadein .5s ease-in 1s forwards; 
@@ -213,7 +224,7 @@ body {
   width: 41%;
   color: #4cc0bd;
   border: solid 2px #4CC0BD;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #CTA-buttonTOnScroll a {
@@ -249,7 +260,6 @@ body {
 
 #mainTitles h1 {
   opacity: 0;
-  font-family: 'Frutiger LT Std' !important;
   font-weight: lighter;
   font-size: 80px;
   color: #fff;
@@ -286,7 +296,6 @@ body {
 }
 
 .mostFAQsContainer {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   padding-bottom: 1%;
   height: 100%;
   width: 100vw;
@@ -294,7 +303,6 @@ body {
 }
 
 #mostFAQsTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   font-size: 40px;
   width: 100vw;
   margin: 0 1% 2% 4%;
@@ -303,7 +311,6 @@ body {
 }
 
 #faqButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   list-style: none;
   display: inline-block;
   margin: 0 auto 0 6.5%;
@@ -330,7 +337,6 @@ body {
 }
 
 .faqButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   background: #73C2BD;
   border-radius: 20px;
   box-sizing: border-box;
@@ -355,7 +361,6 @@ body {
 }
 
 #faqCatTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   font-size: 35px;
   width: 100vw;
   margin: 0 1% 2% 4%;
@@ -364,7 +369,6 @@ body {
 }
 
 #faqCatButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   list-style: none;
   display: inline-block;
   margin: 0 auto 0 6.5%;
@@ -383,7 +387,6 @@ body {
 }
 
 .faqCatButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   background: #fff;
   box-sizing: border-box;
   font-size: 22px;
@@ -404,7 +407,7 @@ body {
   margin-top: 3%;
   font-size: 15px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
   color: #fff; 
   cursor: pointer; 
 }
@@ -419,7 +422,7 @@ body {
 }
 
 .fa-caret-down {
-  color: #fff;
+  color: #fff !important;
 }
 
 .mobileTriggerClose {
@@ -430,7 +433,7 @@ body {
   margin-top: 3%;
   font-size: 15px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
   color: #fff; 
   cursor: pointer; 
 }
@@ -445,7 +448,7 @@ body {
 }
 
 .fa-caret-up {
-  color: #fff;
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -512,7 +515,7 @@ body {
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .footer {
@@ -547,7 +550,7 @@ body {
   float: right;
   padding-left: 2%;
   font-size: 12px;
-  font-weight: bolder;
+  font-family: bold;
   letter-spacing: 6px;
   color: #4cc0bd !important;
 }

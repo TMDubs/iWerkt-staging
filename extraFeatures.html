@@ -14,6 +14,17 @@
   </head>
   <style>
 
+@font-face {
+  font-family: regular;
+  src: url(fonts/frutigerLTStd_Light.woff);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(fonts/frutigerLTStd_Bold.woff);
+  font-weight: bold;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -45,7 +56,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -68,6 +78,7 @@ a:hover {
 body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
+  font-family: regular;
 }
 
 .header {
@@ -90,7 +101,7 @@ body {
   text-align: center;
   font-size: 12px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #menuListOnScroll a {
@@ -155,7 +166,7 @@ body {
   text-align: center;
   font-size: 12px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #menuList a {
@@ -195,7 +206,7 @@ body {
   background-color: #fff;
   color: #4CC0BD;
   border: solid 2px #fff;
-  font-weight: bolder;
+  font-family: bold;
   -moz-animation: fadein .5s ease-in 2s forwards; 
   -webkit-animation: fadein .5s ease-in 2s forwards; 
   -o-animation: fadein .5s ease-in 2s forwards; 
@@ -217,7 +228,7 @@ body {
   width: 41%;
   color: #4cc0bd;
   border: solid 2px #4CC0BD;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 #CTA-buttonTOnScroll a {
@@ -253,7 +264,7 @@ body {
 
 #mainTitles h1 {
   opacity: 0;
-  font-family: 'Frutiger LT Std' !important;
+  font-family: regular;
   font-weight: lighter;
   font-size: 80px;
   color: #fff;
@@ -297,7 +308,7 @@ body {
   margin-bottom: 0.5%;
   margin-top: 3.5%;
   margin-left: 5.5%;
-  font-weight: bolder;
+  font-family: bold;
 }
 
 .answer {
@@ -312,7 +323,7 @@ body {
 }
 
 .contentLink {
-  font-weight: bolder;
+  font-family: bold;
   opacity: 0.9;
   text-decoration: underline;
 }
@@ -371,7 +382,7 @@ ul {
   margin-top: 3%;
   font-size: 15px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
   color: #fff; 
   cursor: pointer; 
 }
@@ -386,7 +397,7 @@ ul {
 }
 
 .fa-caret-down {
-  color: #fff;
+  color: #fff !important;
 }
 
 .mobileTriggerClose {
@@ -397,7 +408,7 @@ ul {
   margin-top: 3%;
   font-size: 15px;
   letter-spacing: 6px;
-  font-weight: bolder;
+  font-family: bold;
   color: #fff; 
   cursor: pointer; 
 }
@@ -412,7 +423,7 @@ ul {
 }
 
 .fa-caret-up {
-  color: #fff;
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -514,7 +525,7 @@ ul {
   float: right;
   padding-left: 2%;
   font-size: 12px;
-  font-weight: bolder;
+  font-family: bold;
   letter-spacing: 6px;
   color: #4cc0bd !important;
 }
