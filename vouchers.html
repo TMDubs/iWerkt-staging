@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Need Help?</title>
+      <title>Vouchers</title>
 
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
@@ -50,7 +50,7 @@
 
 a {
   text-decoration: none !important;
-  color: #4cc0bd;
+  color: #4cc0bd !important;
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
@@ -58,7 +58,11 @@ a {
 }
 
 a:hover {
-  color: #F46853 !important;
+  color: #f46853 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
 }
 
 body {
@@ -273,123 +277,91 @@ body {
   animation: fadein 1s ease-in 1s forwards;
 }
 
-.helpContainer {
+.container {
   overflow: hidden;
   width: 100vw;
   position: relative;
   background-color: #F5F5F5;
 }
 
-.mostFAQsContainer {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  padding-bottom: 1%;
-  height: 100%;
-  width: 100vw;
-  background-color: #fff;
-}
-
-#mostFAQsTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 40px;
-  width: 100vw;
-  margin: 0 1% 2% 4%;
-  padding-top: 3%;
+.questionsContainer {
+  width: 65%;
+  margin: 8% auto 0 auto;
   color: #363636;
+  padding-bottom: 1.5%;
 }
 
-#faqButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+.question {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 0.5%;
+  margin-top: 3.5%;
+  margin-left: 5.5%;
+  font-weight: bolder;
+}
+
+.answer {
+  font-size: 19px;
+  color: #363636;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.tab {
+  margin-left: 8%;
+}
+
+.contentLink {
+  font-weight: bolder;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+ul {
   list-style: none;
-  display: inline-block;
-  margin: 0 auto 0 6.5%;
-  width: 100%;
+  width: 90%;
 }
 
-#faqButtonList li {
+.backButton {
+  width: 50vw;
+  margin: 2% 12%;
+}
+
+.fa.back {
+  color: #4cc0bd;
+  margin-left: 10%;
+  margin-bottom: 8%;
+  font-size: 40px;
+  margin-right: 2%;
   float: left;
-  margin-bottom: 2%;
-  margin-right: 1%;
 }
 
-#faqButtonList a {
-  text-decoration: none;
-  color: #fff !important;
-}
-
-#faqButtonList a:hover {
-  color: #F46853 !important;
+.fa.back:hover {
+  color: #F56954 !important;
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
   -webkit-transition:.25s;
+  transition:.25s;
 }
 
-.faqButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  background: #73C2BD;
-  border-radius: 20px;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.4;
-  padding: 5px 14px;
-}
-
-#faqCatContainer {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 2%;
-  background-color: #f5f5f5;
-  float: left;
-}
-
-#topBar {
-  padding: 3% 4%;
-  font-size: 40px;
-  color: #363636;
-}
-
-#faqCatTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 35px;
-  width: 100vw;
-  margin: 0 1% 2% 4%;
-  color: #363636;
-  padding-top: 3%;
-}
-
-#faqCatButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  list-style: none;
+#backText {
+  margin-top: 1.6%;
+  font-size: 19px;
   display: inline-block;
-  margin: 0 auto 0 6.5%;
-  width: 100%;
+  color: #4cc0bd !important;
 }
 
-#faqCatButtonList li {
-  float: left;
-  margin-bottom: 2%;
-  margin-right: 2%;
-}
-
-#faqCatButtonList a {
-  text-decoration: none;
-  color: #4CC0BD;
-}
-
-.faqCatButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  background: #fff;
-  box-sizing: border-box;
-  font-size: 22px;
-  line-height: 1.4;
-  padding: 2% 1%;
-  text-align: center;
-  width: 20%;
+#backText:hover {
+  color: #f56954 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 }
 
 /*--------MOBILE NAVIGATION---------*/
-
 
 .mobileTriggerOpen {
   display: none;
@@ -633,37 +605,72 @@ body {
         <div class='slideshow'></div>
         <div id='mainTitlesContainer'>
           <div id='mainTitles'>
-            <h1>Need Help?</h1>
-            <h2>YOU'VE COME TO THE RIGHT PLACE</h2>
+            <h1>Vouchers</h1>
+            <h2>THEY'RE WHY WE'RE HERE.</h2>
           </div>
         </div>
       </div>
     </div>
-    <div class='helpContainer'>
-     <div class='mostFAQsContainer'>
-        <div id='mostFAQsTitle'>Popular Questions</div>
-        <ul id='faqButtonList'>
-          <li class='faqButton'><a href='/signup.html'>How do I sign up?</a></li>
-          <li class='faqButton'><a href='/vouchers.html'>How do I create a voucher?</a></li>
-          <li class='faqButton'><a href='/signup.html'>What if I forgot my password?</a></li>
-          <li class='faqButton'><a href='/agencies.html'>How do I sign up with my agency?</a></li>
-          <li class='faqButton'><a href='/clients.html'>How do I create a half-hour rate?</a></li>
-          <li class='faqButton'><a href='/vouchers.html'>I see a pop-up that says:<i style='color:rgba(255, 255, 255, 0.8);'>"Please enter time/rate details properly."</i> What does that mean?</a></li>
-          <li class='faqButton'><a href='/extraFeatures.html'>What if I don't have good service or access to WiFi?</a></li>
+    <div class='container'>
+      <div class="questionsContainer">
+        <ul>
+          <li><p class='question'>HOW DO I CREATE A VOUCHER?</p></li>
+          <li><p class='answer tab'>It's easy! Just click on the ADD WORK/VOUCHER button on the bottom of the HOME SCREEN. Or, you can click the (+) PLUS sign in the WORK/VOUCHERS section. Select a JOB TYPE, PICK A CLIENT, click the (&#8594;) FORWARD ARROW, click the (+) PLUS sign to enter the DATE/TIME/RATE. Just add signatures and you're done - SIMPLE!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I PICK THE DATE/TIME/RATE?</p></li>
+          <li><p class='answer tab'>On the second page of the voucher, click the (+) PLUS sign next to DATE/TIME/RATE and select your details. The rates you entered for your particular client will be listed and can be selected. However, if you need a different rate, you can create a CUSTOM RATE. Just be sure to click the (&#10003;) CHECKMARK when you're done!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I CREATE A HALF-HOUR RATE?</p></li>
+          <li><p class='answer tab'>When creating a rate for a particular client, you can either select 1/2 HOUR as the time increment, or enter that rate manually on the voucher.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>I SEE A POP-UP SAYING:<i>"Please enter time/rate details properly."</i> WHAT DOES THAT MEAN?</p></li>
+          <li><p class='answer tab'>Double check that your info has been entered correctly and that the time doesn't say 0:00. If this persists, try entering the information exactly in the order the options are displayed on the screen (i.e. Left-to-Right: DATE/TIME/RATE). If you continue to have issues, be sure to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a>.
+        </ul>
+        <ul>
+          <li><p class='question'>CAN I ENTER MORE THAN ONE DAY OF WORK ONTO A SINGLE VOUCHER?</p></li>
+          <li><p class='answer tab'>Yes, of course! You can enter any number of days on a voucher. Keep clicking the (+) PLUS sign and enter your additional work details.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>CAN I INCLUDE EXPENSES IN A VOUCHER?</p></li>
+          <li><p class='answer tab'>Yes! Click on the (+) PLUS sign next to EXPENSES and enter the TYPE and AMOUNT. The TOTAL on the voucher will reflect your expenses.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>What if I need a MODEL RELEASE FORM?</p></li>
+          <li><p class='answer tab'>Not a problem. The voucher contains a standard model release form.  Click the box for a RELEASE FORM and the form will appear with your agency, client, and type of job filled in. You will need to enter the period of time for which the release is applicable. If the box is checked (<b>&#x2611;</b>), the form will appear as the second page of the voucher.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>THE SEND BUTTON DIDN'T WORK. WHAT NOW?</p></li>
+          <li><p class='answer tab'>If SEND is not activated, check that the NO VOUCHER EMAIL REQUIRED box is NOT checked. When it IS checked (<b>&#x2611;</b>), you can only SAVE, not SEND.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHO RECEIVES EMAIL COPIES OF THE VOUCHER?</p></li>
+          <li><p class='answer tab'>iWERKT sends a copy of the voucher to your agency contact, your client contact, and the model's email. You have an opportunity to double-check the email addresses of the recipients BEFORE it sends. Great, eh?!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW DO I MAKE SURE MY AGENCY IS GETTING THE VOUCHER?</p></li>
+          <li><p class='answer tab'>After you have signed up, go to SETTINGS > MY AGENCIES. Click the EDIT button of your agency and make sure your AGENCY CONTACT's info is correct. When you hit SEND on a voucher, a pop-up appears before sending. This pop-up asks for confirmation of the CLIENT's EMAIL, the AGENCY's EMAIL, and YOURS as the user. You can always enter an email manually at this point as well. Good stuff to know!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHAT IS THE VOUCHER'S FORMAT WHEN iWERKT SENDS THE EMAILS?</p></li>
+          <li><p class='answer tab'>iWERKT sends vouchers in PDF format. They can be saved and/or printed easily for processing and archiving.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>HOW CAN I GET MY AGENCY'S LOGO PLACED ONTO THE TOP OF THE VOUCHER?</p></li>
+          <li><p class='answer tab'>We are happy to include any agency logo as long as you or they provide it to us. Otherwise, there is a standard photo we include as a place holder.</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>DOES iWERKT SAVE ALL OF MY SUBMITTED VOUCHERS?</p></li>
+          <li><p class='answer tab'>iWERKT keeps a record of all of your submitted vouchers, each organized by date. You can also go back and check-off a saved voucher, marking it as PAID once you've received payment for the booking(s).</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>WHAT IF I NEED TO RE-SEND A VOUCHER?</p></li>
+          <li><p class='answer tab'>If you find that the emails did not go through for some reason, shift or slide the specific voucher/work entry to the right - a SEND box will appear. You will be asked to confirm the email addresses again that you'd like to use for sending the voucher. If you continue to have issues, please feel free to <a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109' class='contactLink'>contact us</a> for help!</li>
         </ul>
       </div>
-      <div id='faqCatContainer'>
-        <div id='topBar'>Categories</div>
-        <ul id='faqCatButtonList'>
-          <li class='faqCatButton'><a href='/general.html'><p id='faqCat'>GENERAL</p></a></li>
-          <li class='faqCatButton'><a href='/signup.html' class='faqCatBox'><p id='faqCat'>SIGNUP</p></a></li>
-          <li class='faqCatButton'><a href='/agencies.html'><p id='faqCat'>AGENCIES</p></a></li>
-          <li class='faqCatButton'><a href='/clients.html'><p id='faqCat'>CLIENTS</p></a></li>
-          <li class='faqCatButton'><a href='/vouchers.html'><p id='faqCat'>VOUCHERS</p></a></li>
-          <li class='faqCatButton'><a href='/extraFeatures.html'><p id='faqCat'>EXTRA FEATURES</p></a></li>
-          <li class='faqCatButton'><a href='/settings.html'><p id='faqCat'>SETTINGS</p></a></li>
-          <li class='faqCatButton'><a href='/pricing.html'><p id='faqCat'>PRICING</p></a></li>
-        </ul>
+      <div class='backButton'><a href='needHelp.html'><i class="fa fa-chevron-circle-left back" aria-hidden="true"></i><p id='backText'>Back to help categories, please.</p></a>
       </div>
       <div class='footer'>
         <span class='icon' id='rightMargin'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></span>
@@ -674,7 +681,6 @@ body {
         <span><a href='needHelp.html' class='footerLink'>NEED HELP?</a></span>
       </div>
     </div>
-
 
       <script type="text/javascript">
       (function($) {          
@@ -693,7 +699,7 @@ body {
 
     <script type='text/javascript'>
       $('.slideshow').backstretch(
-        ['img/slideshow/07.jpg']
+        ['img/slideshow/04.jpg']
       );
     </script>
 

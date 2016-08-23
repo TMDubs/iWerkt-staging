@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Need Help?</title>
+      <title>General</title>
 
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width initial-scale=1.0, minimum-scale=1.0, user-scalable=1'>
@@ -50,7 +50,7 @@
 
 a {
   text-decoration: none !important;
-  color: #4cc0bd;
+  color: #4cc0bd !important;
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
@@ -58,7 +58,11 @@ a {
 }
 
 a:hover {
-  color: #F46853 !important;
+  color: #f46853 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
 }
 
 body {
@@ -273,123 +277,91 @@ body {
   animation: fadein 1s ease-in 1s forwards;
 }
 
-.helpContainer {
+.container {
   overflow: hidden;
   width: 100vw;
   position: relative;
   background-color: #F5F5F5;
 }
 
-.mostFAQsContainer {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  padding-bottom: 1%;
-  height: 100%;
-  width: 100vw;
-  background-color: #fff;
-}
-
-#mostFAQsTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 40px;
-  width: 100vw;
-  margin: 0 1% 2% 4%;
-  padding-top: 3%;
+.questionsContainer {
+  width: 65%;
+  margin: 8% auto 0 auto;
   color: #363636;
+  padding-bottom: 1.5%;
 }
 
-#faqButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+.question {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 0.5%;
+  margin-top: 3.5%;
+  margin-left: 5.5%;
+  font-weight: bolder;
+}
+
+.answer {
+  font-size: 19px;
+  color: #363636;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.tab {
+  margin-left: 8%;
+}
+
+.contentLink {
+  font-weight: bolder;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+ul {
   list-style: none;
-  display: inline-block;
-  margin: 0 auto 0 6.5%;
-  width: 100%;
+  width: 90%;
 }
 
-#faqButtonList li {
+.backButton {
+  width: 50vw;
+  margin: 2% 12%;
+}
+
+.fa.back {
+  color: #4cc0bd;
+  margin-left: 10%;
+  margin-bottom: 8%;
+  font-size: 40px;
+  margin-right: 2%;
   float: left;
-  margin-bottom: 2%;
-  margin-right: 1%;
 }
 
-#faqButtonList a {
-  text-decoration: none;
-  color: #fff !important;
-}
-
-#faqButtonList a:hover {
-  color: #F46853 !important;
+.fa.back:hover {
+  color: #F56954 !important;
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
   -webkit-transition:.25s;
+  transition:.25s;
 }
 
-.faqButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  background: #73C2BD;
-  border-radius: 20px;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.4;
-  padding: 5px 14px;
-}
-
-#faqCatContainer {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 2%;
-  background-color: #f5f5f5;
-  float: left;
-}
-
-#topBar {
-  padding: 3% 4%;
-  font-size: 40px;
-  color: #363636;
-}
-
-#faqCatTitle {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  font-size: 35px;
-  width: 100vw;
-  margin: 0 1% 2% 4%;
-  color: #363636;
-  padding-top: 3%;
-}
-
-#faqCatButtonList {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  list-style: none;
+#backText {
+  margin-top: 1.6%;
+  font-size: 19px;
   display: inline-block;
-  margin: 0 auto 0 6.5%;
-  width: 100%;
+  color: #4cc0bd !important;
 }
 
-#faqCatButtonList li {
-  float: left;
-  margin-bottom: 2%;
-  margin-right: 2%;
-}
-
-#faqCatButtonList a {
-  text-decoration: none;
-  color: #4CC0BD;
-}
-
-.faqCatButton {
-  font-family: 'Frutiger LT Std', Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  background: #fff;
-  box-sizing: border-box;
-  font-size: 22px;
-  line-height: 1.4;
-  padding: 2% 1%;
-  text-align: center;
-  width: 20%;
+#backText:hover {
+  color: #f56954 !important;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 }
 
 /*--------MOBILE NAVIGATION---------*/
-
 
 .mobileTriggerOpen {
   display: none;
@@ -633,37 +605,24 @@ body {
         <div class='slideshow'></div>
         <div id='mainTitlesContainer'>
           <div id='mainTitles'>
-            <h1>Need Help?</h1>
-            <h2>YOU'VE COME TO THE RIGHT PLACE</h2>
+            <h1>General</h1>
+            <h2>WE'RE HERE TO HELP.</h2>
           </div>
         </div>
       </div>
     </div>
-    <div class='helpContainer'>
-     <div class='mostFAQsContainer'>
-        <div id='mostFAQsTitle'>Popular Questions</div>
-        <ul id='faqButtonList'>
-          <li class='faqButton'><a href='/signup.html'>How do I sign up?</a></li>
-          <li class='faqButton'><a href='/vouchers.html'>How do I create a voucher?</a></li>
-          <li class='faqButton'><a href='/signup.html'>What if I forgot my password?</a></li>
-          <li class='faqButton'><a href='/agencies.html'>How do I sign up with my agency?</a></li>
-          <li class='faqButton'><a href='/clients.html'>How do I create a half-hour rate?</a></li>
-          <li class='faqButton'><a href='/vouchers.html'>I see a pop-up that says:<i style='color:rgba(255, 255, 255, 0.8);'>"Please enter time/rate details properly."</i> What does that mean?</a></li>
-          <li class='faqButton'><a href='/extraFeatures.html'>What if I don't have good service or access to WiFi?</a></li>
+    <div class='container'>
+      <div class="questionsContainer">
+        <ul>
+          <li><p class='question'>WHAT IS iWERKT?</p></li>
+          <li><p class='answer tab'>iWERKT is an application that creates digital vouchers for models. You can seamlessly fill in hours, customize rates, collect signatures, and email a copy to your client and agency before you've even left your booking!</p></li>
+        </ul>
+        <ul>
+          <li><p class='question'>DOES iWERKT FUNCTION ON ALL DEVICES?</p></li>
+          <li><p class='answer tab'>YES! iWERKT is available in the <a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8' class='contentLink'>AppStore</a> for iPhone and <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&hl=en_GB' class='contentLink'>GooglePlay</a> for Android users.</p></li>
         </ul>
       </div>
-      <div id='faqCatContainer'>
-        <div id='topBar'>Categories</div>
-        <ul id='faqCatButtonList'>
-          <li class='faqCatButton'><a href='/general.html'><p id='faqCat'>GENERAL</p></a></li>
-          <li class='faqCatButton'><a href='/signup.html' class='faqCatBox'><p id='faqCat'>SIGNUP</p></a></li>
-          <li class='faqCatButton'><a href='/agencies.html'><p id='faqCat'>AGENCIES</p></a></li>
-          <li class='faqCatButton'><a href='/clients.html'><p id='faqCat'>CLIENTS</p></a></li>
-          <li class='faqCatButton'><a href='/vouchers.html'><p id='faqCat'>VOUCHERS</p></a></li>
-          <li class='faqCatButton'><a href='/extraFeatures.html'><p id='faqCat'>EXTRA FEATURES</p></a></li>
-          <li class='faqCatButton'><a href='/settings.html'><p id='faqCat'>SETTINGS</p></a></li>
-          <li class='faqCatButton'><a href='/pricing.html'><p id='faqCat'>PRICING</p></a></li>
-        </ul>
+      <div class='backButton'><a href='needHelp.html'><i class="fa fa-chevron-circle-left back" aria-hidden="true"></i><p id='backText'>Back to help categories, please.</p></a>
       </div>
       <div class='footer'>
         <span class='icon' id='rightMargin'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></span>
@@ -674,7 +633,6 @@ body {
         <span><a href='needHelp.html' class='footerLink'>NEED HELP?</a></span>
       </div>
     </div>
-
 
       <script type="text/javascript">
       (function($) {          
