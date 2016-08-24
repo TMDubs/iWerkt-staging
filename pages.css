@@ -295,8 +295,13 @@ body {
 .bodyContainer h2 {
   font-weight: lighter;
   font-size: 15px;
+  color: #4cc0bd;
   letter-spacing: 3px;
   text-align: center;
+}
+
+.bodyContainer span {
+  font-size: 25px;
 }
 
 .content {
